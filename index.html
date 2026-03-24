@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,6 +22,8 @@
         @media (max-width: 768px) { .timeline-line::before { left: 20px; } }
         .price-card { transition: all 0.3s ease; border: 1px solid #1e293b; }
         .price-card:hover { transform: translateY(-5px); border-color: #3b82f6; }
+        
+        /* Estilos del Formulario Multi-paso */
         .step { display: none; }
         .step.active { display: block; animation: fadeIn 0.4s ease-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
@@ -62,7 +65,7 @@
             <p class="text-slate-300 text-lg md:text-2xl max-w-3xl mx-auto mb-10 leading-relaxed font-light italic">Adquisición real de inglés a través de neurociencia aplicada. Eliminamos la traducción mental para siempre.</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#pricing" class="bg-blue-600 text-white px-10 py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-2xl shadow-blue-500/40 uppercase tracking-widest text-sm text-center">Ver Ofertas</a>
-                <a href="#contact" class="glass border border-slate-600 px-10 py-4 rounded-xl font-bold hover:bg-slate-800 transition uppercase tracking-widest text-sm italic text-center">Prueba de Nivelación</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScqsDS89Rc5QNjncW9gRtAEadA8S-jl6XTLzHLIcivpy6CRyQ/viewform?usp=dialog" target="_blank" class="glass border border-slate-600 px-10 py-4 rounded-xl font-bold hover:bg-slate-800 transition uppercase tracking-widest text-sm italic text-center">Prueba de Nivelación</a>
             </div>
         </div>
     </section>
@@ -124,7 +127,7 @@
         </div>
     </section>
 
-    <section id="about" class="py-16 md:py-32 bg-slate-950 px-6 border-t border-slate-900/50">
+  <section id="about" class="py-8 md:py-8 bg-slate-950 px-6 border-t border-slate-900/50">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
             <div class="w-full md:w-1/3 flex justify-center">
                 <div class="relative w-64 h-64 md:w-80 md:h-80">
@@ -191,6 +194,7 @@
                         <li><i class="fa-solid fa-check text-blue-500 mr-3"></i> Enfoque en tus dudas específicas</li>
                         <li><i class="fa-solid fa-check text-blue-500 mr-3"></i> Horario Flexible (Tú eliges)</li>
                         <li><i class="fa-solid fa-check text-blue-500 mr-3"></i> Estudiante Visita el Centro</li>
+                        <li><i class="fa-solid fa-check text-blue-500 mr-3"></i> Material de Estudio Gratuito</li>
                     </ul>
                     <a href="https://wa.me/50575281644" class="border border-slate-800 py-4 rounded-xl text-center text-[10px] font-black uppercase tracking-widest hover:bg-slate-900 transition">AGENDAR HORA</a>
                 </div>
@@ -202,18 +206,20 @@
                         <li><i class="fa-solid fa-star text-blue-500 mr-3"></i> Método Completo 12 Módulos</li>
                         <li><i class="fa-solid fa-star text-blue-500 mr-3"></i> Seguimiento Cognitivo Diario</li>
                         <li><i class="fa-solid fa-star text-blue-500 mr-3"></i> Guía Exclusiva de Deep Work</li>
-                        <li><i class="fa-solid fa-check text-blue-500 mr-3"></i> Estudiante Visita el Centro</li>
+                        <li><i class="fa-solid fa-check text-blue-500 mr-3"></i> 4 hrs y 30 mins de Clases</li>
+                        <li><i class="fa-solid fa-check text-blue-500 mr-3"></i> Disponible Fines de Semana</li>
                     </ul>
                     <a href="https://wa.me/50575281644" class="bg-blue-600 py-4 rounded-xl text-center text-[10px] font-black uppercase tracking-widest hover:bg-blue-700 transition shadow-lg shadow-blue-600/40">INSCRIBIRME AHORA</a>
                 </div>
                 <div class="price-card p-10 bg-slate-900/20 rounded-[2.5rem] flex flex-col text-left">
-                    <h4 class="text-xl font-bold italic mb-4 uppercase">Self-Study Plus</h4>
-                    <div class="text-6xl font-black italic mb-8">$40<span class="text-lg text-slate-500 not-italic font-normal"> /mes</span></div>
+                    <h4 class="text-xl font-bold italic mb-4 uppercase">Study Plus</h4>
+                    <div class="text-6xl font-black italic mb-8">$35<span class="text-lg text-slate-500 not-italic font-normal"> /mes</span></div>
                     <ul class="space-y-5 text-slate-400 text-sm flex-grow mb-12">
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Sesiones Grupales Semanales</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Sesiones Grupales de Lunes a Jueves</li>
                         <li><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Acceso a Plataforma 24/7</li>
                         <li><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Práctica Diaria Guiada</li>
-                        <li><i class="fa-solid fa-check text-blue-500 mr-3"></i> Clases en Linea </li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Disponibilidad de 3 Horarios</li>
+                        <li><i class="fa-solid fa-check text-blue-500 mr-3"></i> 2 hrs de Clases por Sessión </li>
                     </ul>
                     <a href="https://wa.me/50575281644" class="border border-slate-800 py-4 rounded-xl text-center text-[10px] font-black uppercase tracking-widest hover:bg-slate-900 transition">MÁS INFORMACIÓN</a>
                 </div>
@@ -257,44 +263,161 @@
                 </div>
             </div>
         </div>
+
         <form id="erc-master-form" class="bg-slate-900/40 p-8 md:p-12 rounded-[3rem] border border-slate-800 shadow-2xl">
             <div class="step active" data-title="Información Personal">
                 <div class="grid md:grid-cols-2 gap-6">
-                    <div class="md:col-span-2"><label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">1. Nombre completo*</label><input type="text" name="nombre" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white focus:border-blue-500 outline-none transition italic"></div>
-                    <div><label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">2. Edad*</label><input type="number" name="edad" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white focus:border-blue-500 outline-none transition"></div>
-                    <div><label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">3. Teléfono*</label><input type="tel" name="telefono" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white focus:border-blue-500 outline-none transition" placeholder="+505"></div>
+                    <div class="md:col-span-2">
+                        <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">1. Nombre completo*</label>
+                        <input type="text" name="nombre" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white focus:border-blue-500 outline-none transition italic">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">2. Edad*</label>
+                        <input type="number" name="edad" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white focus:border-blue-500 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">3. Número de teléfono*</label>
+                        <input type="tel" name="telefono" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white focus:border-blue-500 outline-none transition" placeholder="+505">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">4. Correo electrónico</label>
+                        <input type="email" name="email" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white focus:border-blue-500 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">5. Dirección</label>
+                        <input type="text" name="direccion" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white focus:border-blue-500 outline-none transition">
+                    </div>
                 </div>
             </div>
+
             <div class="step" data-title="Experiencia Académica">
                 <div class="space-y-6">
                     <div class="grid md:grid-cols-2 gap-6">
-                        <div><label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">6. ¿Estudias actualmente?*</label><select name="estudia_actualmente" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none"><option>No</option><option>Sí</option></select></div>
-                        <div><label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">7. Institución</label><input type="text" name="institucion" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white italic outline-none"></div>
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">6. ¿Estudia actualmente?*</label>
+                            <select name="estudia_actualmente" id="cond-estudia" onchange="toggleField('cond-estudia', ['institucion'], 'Sí')" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none">
+                                <option value="" disabled selected>Seleccione...</option>
+                                <option value="Sí">Sí</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label id="label-institucion" class="block text-[10px] font-bold uppercase text-slate-700 mb-2 ml-2">7. Nombre de Institución</label>
+                            <input type="text" id="institucion" name="institucion" disabled class="w-full bg-slate-900 border border-slate-800 rounded-2xl px-6 py-4 text-slate-500 outline-none transition italic cursor-not-allowed">
+                        </div>
                     </div>
-                    <div><label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">8. Tiempo de estudio*</label><input type="text" name="tiempo_estudio" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white outline-none"></div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">8. ¿Cuánto tiempo ha estudiado inglés?*</label>
+                            <input type="text" name="tiempo_estudio" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">10. Nivel CEFR estimado</label>
+                            <select name="nivel_cefr" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none">
+                                <option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">9. ¿Cómo se siente con su nivel actual?*</label>
+                        <textarea name="sentimiento_nivel" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white h-20 outline-none"></textarea>
+                    </div>
                 </div>
             </div>
+
             <div class="step" data-title="Metas y Dificultades">
                 <div class="space-y-6">
-                    <div><label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">11. Mayor dificultad*</label><textarea name="dificultad" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white h-24 outline-none"></textarea></div>
-                    <div><label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">13. Metas principales*</label><textarea name="metas" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white h-24 outline-none"></textarea></div>
-                </div>
-            </div>
-            <div class="step" data-title="Laboral y Disponibilidad">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div><label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">14. ¿Trabajas?*</label><select name="trabaja" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none"><option>No</option><option>Sí</option></select></div>
-                    <div><label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">18. Horas/semana*</label><input type="text" name="horas_estudio" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white outline-none"></div>
-                </div>
-            </div>
-            <div class="step" data-title="Confirmación Final">
-                <div class="space-y-6">
-                    <textarea name="comentarios" placeholder="21. Comentarios adicionales..." class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white h-24 outline-none italic"></textarea>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <select name="pref_whatsapp" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none"><option>Mensaje escrito</option><option>Llamada</option></select>
-                        <select name="idioma_contacto" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none"><option>Español</option><option>Inglés</option></select>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">11. ¿Cuál ha sido su mayor dificultad?*</label>
+                        <textarea name="dificultad" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white h-24 outline-none"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">12. ¿Qué le gustaría mejorar específicamente?*</label>
+                        <input type="text" name="mejora_especifica" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">13. ¿Cuáles son sus metas principales?*</label>
+                        <textarea name="metas" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white h-24 outline-none"></textarea>
                     </div>
                 </div>
             </div>
+
+            <div class="step" data-title="Laboral y Disponibilidad">
+                <div class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">14. ¿Actualmente trabaja?*</label>
+                            <select name="trabaja" id="cond-trabaja" onchange="toggleField('cond-trabaja', ['horas_trabajo', 'horario_trabajo'], 'Sí')" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none">
+                                <option value="" disabled selected>Seleccione...</option>
+                                <option value="Sí">Sí</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label id="label-horas_trabajo" class="block text-[10px] font-bold uppercase text-slate-700 mb-2">15. Horas/día</label>
+                                <input type="number" id="horas_trabajo" name="horas_trabajo" disabled class="w-full bg-slate-900 border border-slate-800 rounded-2xl px-4 py-4 text-slate-500 outline-none cursor-not-allowed">
+                            </div>
+                            <div>
+                                <label id="label-horario_trabajo" class="block text-[10px] font-bold uppercase text-slate-700 mb-2">16. Horario</label>
+                                <input type="text" id="horario_trabajo" name="horario_trabajo" disabled class="w-full bg-slate-900 border border-slate-800 rounded-2xl px-4 py-4 text-slate-500 outline-none cursor-not-allowed">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">17. ¿Tiene con quién practicar?</label>
+                            <select name="practica_companero" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none">
+                                <option>No</option><option>Sí</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">18. Horas/semana para estudio*</label>
+                            <input type="text" name="horas_estudio" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white outline-none">
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">19. ¿Disponible fines de semana?*</label>
+                            <select name="dispo_finde" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none">
+                                <option>Sí</option><option>No</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">20. Horario de preferencia</label>
+                            <input type="text" name="horario_pref" placeholder="Ej: Mañanas" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white outline-none italic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step" data-title="Confirmación Final">
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">21. Comentarios o preguntas adicionales</label>
+                        <textarea name="comentarios" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white h-24 outline-none italic"></textarea>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">Preferencia WhatsApp*</label>
+                            <select name="pref_whatsapp" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none">
+                                <option>Mensaje escrito</option>
+                                <option>Nota de voz</option>
+                                <option>Llamada</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">Idioma de contacto*</label>
+                            <select name="idioma_contacto" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none">
+                                <option>Español</option>
+                                <option>Inglés</option>
+                                <option>Ambos</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="flex justify-between items-center mt-12 pt-8 border-t border-slate-800/50">
                 <button type="button" id="prevBtn" class="px-8 py-4 text-[10px] font-black uppercase tracking-widest text-slate-500 hover:text-white transition invisible">Anterior</button>
                 <div class="flex gap-4">
@@ -303,13 +426,16 @@
                 </div>
             </div>
         </form>
+
         <div id="success-message" class="bg-slate-900/60 p-12 rounded-[3rem] border border-emerald-500/30 shadow-2xl flex-col items-center text-center">
             <div class="w-20 h-20 bg-emerald-500/20 rounded-full flex items-center justify-center mb-6">
                 <i class="fa-solid fa-check text-4xl text-emerald-500"></i>
             </div>
             <h3 class="text-3xl font-black italic uppercase tracking-tighter mb-4">¡Registro Recibido!</h3>
             <p class="text-slate-400 text-lg font-light italic leading-relaxed max-w-md">Tu camino hacia la fluidez cognitiva ha comenzado. Un especialista de <span class="text-white font-bold">ERC Academy</span> te contactará pronto.</p>
-            <button onclick="returnToHero()" class="mt-8 text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 hover:text-white transition">Volver al inicio</button>
+            <button onclick="goToHero()" class="mt-8 text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 hover:text-white transition">
+                Volver al inicio
+            </button>
         </div>
     </section>
 
@@ -317,22 +443,17 @@
         <div class="text-2xl font-black mb-6 uppercase tracking-tighter italic">
             ERC Academy<span class="text-blue-500">.</span>
         </div>
-
         <div class="flex justify-center gap-8 mb-10 text-xl text-slate-500">
             <a href="https://www.youtube.com/@ERCNic" target="_blank" class="hover:text-red-600 transition"><i class="fa-brands fa-youtube"></i></a>
             <a href="https://www.tiktok.com/@erc.nic" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-tiktok"></i></a>
             <a href="https://www.facebook.com/ercnica/" target="_blank" class="hover:text-blue-600 transition"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.instagram.com/erc.nic/" target="_blank" class="hover:text-pink-500 transition"><i class="fa-brands fa-instagram"></i></a>
         </div>
-
         <p class="text-slate-600 text-[9px] uppercase tracking-[0.5em] font-bold text-center mb-12">
             Cognitive Language Acquisition Program Nicaragua &copy; 2026
         </p>
-
         <div class="w-full max-w-5xl border-t border-slate-900/50 pt-12">
-            <h5 class="text-[10px] font-black text-blue-500 uppercase mb-8 tracking-[0.3em] text-left">
-                Aviso Legal y Condiciones de Servicio
-            </h5>
+            <h5 class="text-[10px] font-black text-blue-500 uppercase mb-8 tracking-[0.3em] text-left">Aviso Legal</h5>
             <div class="grid md:grid-cols-2 gap-x-16 gap-y-8 text-[9px] text-slate-600 uppercase tracking-tighter leading-loose italic text-left">
                 <p>1. PROPIEDAD INTELECTUAL: TODO EL MATERIAL ES PROPIEDAD DE ERC. QUEDA PROHIBIDA SU DISTRIBUCIÓN.</p>
                 <p>2. POLÍTICA DE INVERSIÓN: NO SE REALIZAN REEMBOLSOS UNA VEZ ENTREGADOS LOS MATERIALES DIGITALES.</p>
@@ -342,12 +463,12 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/50576237775" target="_blank" class="ws-float fixed bottom-8 right-8 z-[100] bg-emerald-500 hover:bg-emerald-600 w-16 h-16 rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(16,185,129,0.4)] transition-all hover:scale-110 group">
+    <a href="https://wa.me/50575281644" target="_blank" class="fixed bottom-8 right-8 z-[100] bg-emerald-500 hover:bg-emerald-600 w-16 h-16 rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(16,185,129,0.4)] transition-all hover:scale-110 group">
         <i class="fa-brands fa-whatsapp text-3xl text-white"></i>
-        <span class="absolute right-20 bg-emerald-500 text-white text-[9px] font-bold px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap uppercase tracking-[0.2em] shadow-xl">¿Tienes dudas? Chatea aquí</span>
+        <span class="absolute right-20 bg-emerald-500 text-white text-[9px] font-bold px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap uppercase tracking-[0.2em] shadow-xl">¿Tienes dudas?</span>
     </a>
 
-    <script>
+<script>
         const steps = document.querySelectorAll(".step");
         const nextBtn = document.getElementById("nextBtn");
         const prevBtn = document.getElementById("prevBtn");
@@ -359,12 +480,45 @@
         const formHeader = document.getElementById("form-header");
         const successMsg = document.getElementById("success-message");
 
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw_os17kdfwBwmZLs8ZETO5667OtD4v2AhUE3L73irYBDEgEFAvUlckt8zBSogDg9_ynA/exec"; 
         let currentStep = 0;
 
+        function toggleField(triggerId, targetIds, requiredValue) {
+            const trigger = document.getElementById(triggerId);
+            const isMatch = trigger.value === requiredValue;
+
+            targetIds.forEach(id => {
+                const field = document.getElementById(id);
+                const label = document.getElementById('label-' + id);
+                if (isMatch) {
+                    field.disabled = false;
+                    field.required = true;
+                    field.classList.remove('bg-slate-900', 'text-slate-500', 'cursor-not-allowed');
+                    field.classList.add('bg-slate-950', 'text-white');
+                    if(label) label.classList.replace('text-slate-700', 'text-slate-500');
+                } else {
+                    field.disabled = true;
+                    field.required = false;
+                    field.value = '';
+                    field.classList.add('bg-slate-900', 'text-slate-500', 'cursor-not-allowed');
+                    field.classList.remove('bg-slate-950', 'text-white');
+                    if(label) label.classList.replace('text-slate-500', 'text-slate-700');
+                }
+            });
+        }
+
         function updateForm() {
-            steps.forEach((step, index) => step.classList.toggle("active", index === currentStep));
+            steps.forEach((step, index) => {
+                step.classList.toggle("active", index === currentStep);
+            });
+
+            const percent = ((currentStep + 1) / steps.length) * 100;
+            progress.style.width = percent + "%";
+            indicator.innerText = `Paso ${currentStep + 1} de ${steps.length}`;
             titleText.innerText = steps[currentStep].getAttribute("data-title");
+
             prevBtn.classList.toggle("invisible", currentStep === 0);
+            
             if (currentStep === steps.length - 1) {
                 nextBtn.classList.add("hidden");
                 submitBtn.classList.remove("hidden");
@@ -372,49 +526,79 @@
                 nextBtn.classList.remove("hidden");
                 submitBtn.classList.add("hidden");
             }
-            const percent = ((currentStep + 1) / steps.length) * 100;
-            progress.style.width = percent + "%";
-            indicator.innerText = `Paso ${currentStep + 1} de ${steps.length}`;
         }
 
         nextBtn.addEventListener("click", () => {
-            const inputs = steps[currentStep].querySelectorAll("input[required], textarea[required]");
+            const inputs = steps[currentStep].querySelectorAll("input[required], select[required], textarea[required]");
             let valid = true;
-            inputs.forEach(i => {
-                if(!i.value) { i.classList.add("border-red-500"); valid = false; }
-                else { i.classList.remove("border-red-500"); }
+            inputs.forEach(input => { 
+                if (!input.value || (input.type === "tel" && input.value.length < 4)) { 
+                    valid = false; 
+                    input.classList.add("border-red-500"); 
+                } else { 
+                    input.classList.remove("border-red-500"); 
+                } 
             });
-            if (valid && currentStep < steps.length - 1) { currentStep++; updateForm(); }
-        });
 
-        prevBtn.addEventListener("click", () => { if (currentStep > 0) { currentStep--; updateForm(); } });
-
-        form.addEventListener("submit", (e) => {
-            e.preventDefault();
-            form.style.opacity = "0";
-            form.style.transition = "all 0.5s ease";
-            setTimeout(() => {
-                form.style.display = "none";
-                formHeader.style.display = "none";
-                successMsg.style.display = "flex";
-                successMsg.classList.add("active");
-                successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }, 500);
-        });
-
-        function returnToHero() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            setTimeout(() => {
-                successMsg.classList.remove("active");
-                successMsg.style.display = "none";
-                formHeader.style.display = "block";
-                form.style.display = "block";
-                form.style.opacity = "1";
-                form.reset();
-                currentStep = 0;
+            if (valid && currentStep < steps.length - 1) {
+                currentStep++;
                 updateForm();
-            }, 600);
+                window.scrollTo({ top: form.offsetTop - 100, behavior: 'smooth' });
+            }
+        });
+
+        prevBtn.addEventListener("click", () => {
+            if (currentStep > 0) {
+                currentStep--;
+                updateForm();
+            }
+        });
+
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            submitBtn.disabled = true;
+            submitBtn.innerText = "ENVIANDO...";
+
+            fetch(SCRIPT_URL, { 
+                method: 'POST', 
+                mode: 'no-cors', 
+                body: new FormData(form) 
+            })
+            .then(() => {
+                form.style.display = 'none';
+                formHeader.style.display = 'none';
+                successMsg.style.display = 'flex';
+                successMsg.classList.add("active");
+                window.scrollTo({ top: successMsg.offsetTop - 100, behavior: 'smooth' });
+            })
+            .catch(error => {
+                console.error("Submission Error:", error);
+                alert("Error al enviar. Por favor intenta de nuevo.");
+                submitBtn.disabled = false;
+                submitBtn.innerText = "FINALIZAR REGISTRO";
+            });
+        });
+
+        // New function to handle the "Volver al inicio" button
+        function goToHero() {
+            form.reset();
+            currentStep = 0;
+            updateForm();
+            
+            // Toggle visibility back
+            successMsg.style.display = 'none';
+            formHeader.style.display = 'block';
+            form.style.display = 'block';
+            submitBtn.disabled = false;
+            submitBtn.innerText = "FINALIZAR REGISTRO";
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+
+        updateForm();
     </script>
+</body>
+</script>
 </body>
 </html>
