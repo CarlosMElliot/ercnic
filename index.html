@@ -17,7 +17,7 @@
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <style>
+<style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; background-color: #020617; }
         .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); }
         .hero-bg {
@@ -39,6 +39,22 @@
         select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2364748b'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; background-size: 1em; }
         #success-message { display: none; }
         #success-message.active { display: flex; animation: fadeIn 0.6s ease-out; }
+
+        /* --- NUEVOS ESTILOS: SCROLLBAR PARA RESEÑAS --- */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 5px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f8fafc; /* Color muy claro para el fondo */
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1; /* Gris suave que resalta sobre blanco */
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; /* Se oscurece un poco al pasar el mouse */
+        }
     </style>
 </head>
 <body class="bg-slate-950 text-white selection:bg-blue-500">
@@ -757,9 +773,10 @@
                                     </div>
                                 </div>
 
-                                <p class="text-slate-600 text-[13px] leading-relaxed mb-8 flex-grow font-medium italic">
-                                    "${review.text.substring(0, 160)}..."
-                                </p>
+                                // Asegúrate de incluir 'overflow-y-auto', 'max-h-[150px]' y 'custom-scrollbar'
+                                <div class="text-slate-600 text-[13px] leading-relaxed mb-8 flex-grow font-medium italic overflow-y-auto max-h-[150px] pr-3 custom-scrollbar">
+                                    "${review.text}"
+                                </div>
 
                                 <div class="pt-5 border-t border-slate-50 flex items-center gap-3">
                                     <img src="${review.profile_photo_url}" 
