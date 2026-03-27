@@ -710,8 +710,28 @@
                 if (status === google.maps.places.PlacesServiceStatus.OK && place.reviews) {
                     container.innerHTML = ''; // Clear the "Conectando..." pulse
 
+                                // 1. ADD THE SUMMARY BADGE HERE
+                    const summaryHtml = `
+                        <div class="col-span-full flex justify-center mb-8">
+                            <div class="flex items-center gap-5 bg-slate-900/40 backdrop-blur-md border border-slate-800 p-5 rounded-3xl shadow-2xl">
+                                <div class="text-5xl font-black text-white leading-none">${place.rating}</div>
+                                <div class="flex flex-col">
+                                    <div class="text-amber-400 flex gap-0.5 text-base">
+                                        ${'★'.repeat(Math.round(place.rating))}${'☆'.repeat(5 - Math.round(place.rating))}
+                                    </div>
+                                    <div class="text-slate-500 text-[10px] font-black uppercase tracking-[0.2em] mt-2">
+                                        ${place.user_ratings_total} Opiniones en Google
+                                    </div>
+                                </div>
+                                <div class="h-10 w-[1px] bg-slate-800 mx-1"></div>
+                                <img src="https://www.gstatic.com/images/branding/product/2x/googleg_32dp.png" class="w-7 h-7" alt="Google">
+                            </div>
+                        </div>
+                    `;
+                    container.innerHTML = summaryHtml;
+
                     // We take the top 3 reviews
-                    place.reviews.slice(0, 3).forEach(review => {
+                    place.reviews.slice(0, 6).forEach(review => {
                         const stars = '★'.repeat(review.rating) + '☆'.repeat(5 - review.rating);
                         
                         // Injecting using your "price-card" and "slate" styles
