@@ -705,26 +705,30 @@
 
             service.getDetails({
                 placeId: ERC_PLACE_ID,
-                fields: ['reviews', 'rating']
+                fields: ['reviews', 'rating', 'user_ratings_total']
             }, (place, status) => {
                 if (status === google.maps.places.PlacesServiceStatus.OK && place.reviews) {
                     container.innerHTML = ''; // Clear the "Conectando..." pulse
 
                                 // 1. ADD THE SUMMARY BADGE HERE
                     const summaryHtml = `
-                        <div class="col-span-full flex justify-center mb-8">
-                            <div class="flex items-center gap-5 bg-slate-900/40 backdrop-blur-md border border-slate-800 p-5 rounded-3xl shadow-2xl">
-                                <div class="text-5xl font-black text-white leading-none">${place.rating}</div>
-                                <div class="flex flex-col">
-                                    <div class="text-amber-400 flex gap-0.5 text-base">
-                                        ${'★'.repeat(Math.round(place.rating))}${'☆'.repeat(5 - Math.round(place.rating))}
-                                    </div>
-                                    <div class="text-slate-500 text-[10px] font-black uppercase tracking-[0.2em] mt-2">
-                                        ${place.user_ratings_total} Opiniones en Google
+                        <div class="col-span-full flex justify-center mb-10">
+                            <div class="flex items-center gap-3 bg-slate-900/60 backdrop-blur-md border border-slate-800 px-4 py-2 rounded-full shadow-lg">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-white font-black text-lg">${place.rating}</span>
+                                    <div class="text-amber-400 flex gap-0.5 text-xs">
+                                        ${'★'.repeat(Math.round(place.rating))}
                                     </div>
                                 </div>
-                                <div class="h-10 w-[1px] bg-slate-800 mx-1"></div>
-                                <img src="https://www.gstatic.com/images/branding/product/2x/googleg_32dp.png" class="w-7 h-7" alt="Google">
+                                
+                                <div class="h-4 w-[1px] bg-slate-700"></div>
+                                
+                                <div class="flex items-center gap-3">
+                                    <span class="text-slate-400 text-[10px] font-bold uppercase tracking-widest">
+                                        ${place.user_ratings_total || '50+'} Opiniones
+                                    </span>
+                                    <img src="https://www.gstatic.com/images/branding/product/2x/googleg_32dp.png" class="w-4 h-4 opacity-90" alt="Google">
+                                </div>
                             </div>
                         </div>
                     `;
