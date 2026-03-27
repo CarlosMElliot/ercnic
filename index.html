@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,6 +6,15 @@
     <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3429/3429156.png">
     <title>ERC Academy - Entrenamiento Cognitivo Nicaragua</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClr0TIgtaBgz1ZZ4IUNJCLpH1UlQ77GWY&libraries=places"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -49,6 +57,7 @@
                     <a href="https://www.tiktok.com/@erc.nic" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-tiktok text-lg"></i></a>
                     <a href="https://www.facebook.com/ercnica/" target="_blank" class="hover:text-blue-600 transition"><i class="fa-brands fa-facebook text-lg"></i></a>
                     <a href="https://www.instagram.com/erc.nic/" target="_blank" class="hover:text-pink-500 transition"><i class="fa-brands fa-instagram text-lg"></i></a>
+                    <a href="https://www.google.com/maps/place/English+Response+on+Command+(ERC)/@12.1400625,-86.2158125,851m/data=!3m1!1e3!4m14!1m7!3m6!1s0xa8e74518e2b484cf:0xff9be86fbb640ba7!2sEnglish+Response+on+Command+(ERC)!8m2!3d12.1400625!4d-86.2158125!16s%2Fg%2F11z10ftt30!3m5!1s0xa8e74518e2b484cf:0xff9be86fbb640ba7!8m2!3d12.1400625!4d-86.2158125!16s%2Fg%2F11z10ftt30?hl=en&entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="hover:text-green-500 transition"><i class="fa-solid fa-location-dot"></i></a>
                 </div>
                 <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-full text-xs font-bold transition uppercase tracking-widest shadow-lg shadow-blue-600/20">Registrarme</a>
             </div>
@@ -127,6 +136,21 @@
         </div>
     </section>
 
+
+    <section id="testimonials" class="py-16 md:py-24 bg-slate-950 px-6 border-t border-slate-900/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-blue-500 font-bold uppercase tracking-widest text-[10px] mb-4 italic">Reviews de Nuestro Servicio</h2>
+                <h3 class="text-4xl md:text-5xl font-black italic tracking-tighter uppercase">Lo que dicen nuestros <span class="text-blue-400">Clientes</span></h3>
+            </div>
+            
+            <div id="google-reviews-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="text-slate-500 italic text-center col-span-full animate-pulse">Conectando con Google Maps...</div>
+            </div>
+        </div>
+    </section>
+
+
   <section id="about" class="py-8 md:py-8 bg-slate-950 px-6 border-t border-slate-900/50">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
             <div class="w-full md:w-1/3 flex justify-center">
@@ -149,7 +173,7 @@
                     </h2>
                 </div>
 
-                <div class="space-y-6 max-w-2xl">
+                <div class="space-y-12 max-w-2xl">
                     <div class="border-l-2 border-blue-600 pl-6">
                         <h3 class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Nuestra Misión: Tu Autonomía</h3>
                         <p class="text-slate-200 text-base md:text-base italic leading-relaxed">
@@ -180,7 +204,7 @@
             </div>
     </section>
 
-    <section id="pricing" class="py-16 md:py-32 bg-slate-950 px-6">
+<section id="pricing" class="py-16 md:py-32 bg-slate-950 px-6">
         <div class="max-w-7xl mx-auto text-center">
             <h2 class="text-blue-500 font-bold uppercase tracking-widest text-[10px] mb-4 italic">Investment Options</h2>
             <h3 class="text-5xl md:text-7xl font-black italic mb-6 uppercase">Invierte en tu Futuro</h3>
@@ -196,12 +220,13 @@
                         <li><i class="fa-solid fa-check text-blue-500 mr-3"></i> Estudiante Visita el Centro</li>
                         <li><i class="fa-solid fa-check text-blue-500 mr-3"></i> Material de Estudio Gratuito</li>
                     </ul>
-                    <a href="https://wa.me/50575281644" class="border border-slate-800 py-4 rounded-xl text-center text-[10px] font-black uppercase tracking-widest hover:bg-slate-900 transition">AGENDAR HORA</a>
+                    <a href="https://wa.me/50575281644?text=Hola,%20me%20gustaría%20reservar%20mi%20cupo%20para:%20One-on-One%20($10/hora).%20Mi%20nombre%20es:" class="border border-slate-800 py-4 rounded-xl text-center text-[10px] font-black uppercase tracking-widest hover:bg-slate-900 transition">AGENDAR HORA</a>
                 </div>
+
                 <div class="price-card p-10 bg-blue-900/10 rounded-[2.5rem] flex flex-col text-left scale-100 md:scale-105 z-10 border-2 border-blue-600 relative shadow-2xl shadow-blue-900/20 my-8 md:my-0">
                     <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest italic">MÁS POPULAR</div>
                     <h4 class="text-xl font-bold italic mb-4 uppercase text-blue-400">Full Training ERC</h4>
-                    <div class="text-6xl font-black italic mb-8 text-white">$90<span class="text-lg text-slate-500 not-italic font-normal"> /mes</span></div>
+                    <div class="text-6xl font-black italic mb-8 text-white">$40<span class="text-lg text-slate-500 not-italic font-normal"> /mes</span></div>
                     <ul class="space-y-5 text-slate-300 text-sm flex-grow mb-12">
                         <li><i class="fa-solid fa-star text-blue-500 mr-3"></i> Método Completo 12 Módulos</li>
                         <li><i class="fa-solid fa-star text-blue-500 mr-3"></i> Seguimiento Cognitivo Diario</li>
@@ -209,11 +234,12 @@
                         <li><i class="fa-solid fa-check text-blue-500 mr-3"></i> 4 hrs y 30 mins de Clases</li>
                         <li><i class="fa-solid fa-check text-blue-500 mr-3"></i> Disponible Fines de Semana</li>
                     </ul>
-                    <a href="https://wa.me/50575281644" class="bg-blue-600 py-4 rounded-xl text-center text-[10px] font-black uppercase tracking-widest hover:bg-blue-700 transition shadow-lg shadow-blue-600/40">INSCRIBIRME AHORA</a>
+                    <a href="https://wa.me/50575281644?text=Hola,%20me%20gustaría%20reservar%20mi%20cupo%20para:%20Full%20Training%20ERC%20($40/mes).%20Mi%20nombre%20es:" class="bg-blue-600 py-4 rounded-xl text-center text-[10px] font-black uppercase tracking-widest hover:bg-blue-700 transition shadow-lg shadow-blue-600/40">INSCRIBIRME AHORA</a>
                 </div>
+
                 <div class="price-card p-10 bg-slate-900/20 rounded-[2.5rem] flex flex-col text-left">
                     <h4 class="text-xl font-bold italic mb-4 uppercase">Study Plus</h4>
-                    <div class="text-6xl font-black italic mb-8">$35<span class="text-lg text-slate-500 not-italic font-normal"> /mes</span></div>
+                    <div class="text-6xl font-black italic mb-8">$60<span class="text-lg text-slate-500 not-italic font-normal"> /mes</span></div>
                     <ul class="space-y-5 text-slate-400 text-sm flex-grow mb-12">
                         <li><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Sesiones Grupales de Lunes a Jueves</li>
                         <li><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Acceso a Plataforma 24/7</li>
@@ -221,29 +247,61 @@
                         <li><i class="fa-solid fa-check text-emerald-500 mr-3"></i> Disponibilidad de 3 Horarios</li>
                         <li><i class="fa-solid fa-check text-blue-500 mr-3"></i> 2 hrs de Clases por Sessión </li>
                     </ul>
-                    <a href="https://wa.me/50575281644" class="border border-slate-800 py-4 rounded-xl text-center text-[10px] font-black uppercase tracking-widest hover:bg-slate-900 transition">MÁS INFORMACIÓN</a>
+                    <a href="https://wa.me/50575281644?text=Hola,%20me%20gustaría%20reservar%20mi%20cupo%20para:%20Study%20Plus%20($60/mes).%20Mi%20nombre%20es:" class="border border-slate-800 py-4 rounded-xl text-center text-[10px] font-black uppercase tracking-widest hover:bg-slate-900 transition">MÁS INFORMACIÓN</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-slate-900/30 border-y border-slate-900">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-16 text-center">
-            <div class="flex flex-col items-center">
-                <i class="fa-solid fa-map-location-dot text-blue-500 text-3xl mb-4"></i>
-                <h4 class="text-blue-400 font-black text-[10px] uppercase tracking-[0.4em] mb-2">Ubicación</h4>
-                <p class="text-slate-300 text-sm font-light italic">Managua, Nicaragua<br>Modalidad Virtual & Presencial</p>
+    <section class="w-full py-20 bg-slate-950 border-y border-slate-900">
+        <div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-4 text-center items-start">
+            
+            <div class="flex flex-col items-center group">
+                <div class="w-14 h-14 rounded-2xl bg-blue-500/5 border border-blue-500/20 flex items-center justify-center mb-5 group-hover:bg-blue-500/10 transition-colors">
+                    <i class="fa-solid fa-location-dot text-blue-500 text-3xl"></i>
+                </div>
+                <h4 class="text-blue-400 font-black text-xs uppercase tracking-[0.4em] mb-3">Sede Central</h4>
+                <div class="space-y-1">
+                    <p class="text-white text-lg font-bold tracking-tight">Managua, Nicaragua</p>
+                    <p class="text-slate-400 text-sm font-medium italic leading-relaxed">
+                        Semáforos Miguel Gutiérrez,<br>
+                        1c. al Sur, Edificio Principal.
+                    </p>
+                </div>
             </div>
-            <div class="flex flex-col items-center">
-                <i class="fa-solid fa-envelope-open-text text-blue-500 text-3xl mb-4"></i>
-                <h4 class="text-blue-400 font-black text-[10px] uppercase tracking-[0.4em] mb-2">Email Academy</h4>
-                <a href="mailto:erc.academianic@gmail.com" class="text-white text-2xl font-bold italic hover:text-blue-400 transition underline underline-offset-8 decoration-slate-800">erc.academianic@gmail.com</a>
+
+            <div class="flex flex-col items-center group">
+                <div class="w-14 h-14 rounded-2xl bg-blue-500/5 border border-blue-500/20 flex items-center justify-center mb-5 group-hover:bg-blue-500/10 transition-colors">
+                    <i class="fa-solid fa-bus text-blue-500 text-3xl"></i>
+                </div>
+                <h4 class="text-blue-400 font-black text-xs uppercase tracking-[0.4em] mb-3">Transporte</h4>
+                <p class="text-white text-lg font-bold mb-1">Rutas Cercanas</p>
+                <p class="text-slate-400 text-sm font-medium italic leading-snug">
+                    110, 117, 119, 104, 102,<br>
+                    111, 154, 106
+                </p>
             </div>
-            <div class="flex flex-col items-center">
-                <i class="fa-solid fa-clock text-blue-500 text-3xl mb-4"></i>
-                <h4 class="text-blue-400 font-black text-[10px] uppercase tracking-[0.4em] mb-2">Atención</h4>
-                <p class="text-slate-300 text-sm font-light italic">Lunes - Sábado<br>08:00 AM - 07:00 PM</p>
+
+            <div class="flex flex-col items-center group">
+                <div class="w-14 h-14 rounded-2xl bg-blue-500/5 border border-blue-500/20 flex items-center justify-center mb-5 group-hover:bg-blue-500/10 transition-colors">
+                    <i class="fa-solid fa-envelope-open-text text-blue-500 text-3xl"></i>
+                </div>
+                <h4 class="text-blue-400 font-black text-xs uppercase tracking-[0.4em] mb-3">Email Academy</h4>
+                <a href="mailto:erc.academianic@gmail.com" class="text-white text-xl font-black italic hover:text-blue-400 transition-all duration-300 underline underline-offset-[10px] decoration-slate-800 hover:decoration-blue-500">
+                    erc.academianic@gmail.com
+                </a>
+                <p class="text-slate-500 text-[10px] mt-5 uppercase font-bold tracking-[0.2em]">Soporte Académico 24/7</p>
             </div>
+
+            <div class="flex flex-col items-center group">
+                <div class="w-14 h-14 rounded-2xl bg-blue-500/5 border border-blue-500/20 flex items-center justify-center mb-5 group-hover:bg-blue-500/10 transition-colors">
+                    <i class="fa-solid fa-clock text-blue-500 text-3xl"></i>
+                </div>
+                <h4 class="text-blue-400 font-black text-xs uppercase tracking-[0.4em] mb-3">Atención</h4>
+                <p class="text-white text-lg font-bold">Lunes — Sábado</p>
+                <p class="text-slate-400 text-sm font-medium italic">08:00 AM — 07:00 PM</p>
+            </div>
+
         </div>
     </section>
 
@@ -252,6 +310,10 @@
             <div class="text-center mb-10">
                 <h2 class="text-3xl font-black italic tracking-tighter uppercase mb-2">Registro de Inscripción <span class="text-blue-500">ERC</span></h2>
                 <p class="text-slate-500 text-xs tracking-widest uppercase font-bold">Programa de Adquisición Lingüística</p>
+                <p class="text-center text-slate-400 text-[11px] leading-relaxed italic py-1 max-w-md mx-auto">
+                    Te motivamos a que llenes el formulario para conocer un poco más sobre ti. 
+                    Si es posible, envíanos una <span class="text-blue-400 font-semibold">captura de pantalla</span> del mensaje final por WhatsApp para darte seguimiento.
+                </p>
             </div>
             <div class="mb-10 px-4">
                 <div class="flex justify-between text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 mb-2">
@@ -261,6 +323,7 @@
                 <div class="w-full bg-slate-900 h-1.5 rounded-full overflow-hidden border border-slate-800">
                     <div id="progress" class="progress-bar bg-blue-600 h-full w-1/5"></div>
                 </div>
+
             </div>
         </div>
 
@@ -422,7 +485,9 @@
                 <button type="button" id="prevBtn" class="px-8 py-4 text-[10px] font-black uppercase tracking-widest text-slate-500 hover:text-white transition invisible">Anterior</button>
                 <div class="flex gap-4">
                     <button type="button" id="nextBtn" class="bg-blue-600 hover:bg-blue-700 px-10 py-4 rounded-2xl font-black uppercase tracking-[0.2em] text-[10px] transition-all">Siguiente</button>
-                    <button type="submit" id="submitBtn" class="hidden bg-emerald-600 hover:bg-emerald-700 px-10 py-4 rounded-2xl font-black uppercase tracking-[0.2em] text-[10px] transition-all">Finalizar Registro</button>
+                    <button type="submit" id="submitBtn" formnovalidate class="hidden bg-emerald-600 hover:bg-emerald-700 px-10 py-4 rounded-2xl font-black uppercase tracking-[0.2em] text-[10px] transition-all">
+                        Finalizar Registro
+                    </button>
                 </div>
             </div>
         </form>
@@ -448,6 +513,7 @@
             <a href="https://www.tiktok.com/@erc.nic" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-tiktok"></i></a>
             <a href="https://www.facebook.com/ercnica/" target="_blank" class="hover:text-blue-600 transition"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.instagram.com/erc.nic/" target="_blank" class="hover:text-pink-500 transition"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.google.com/maps/place/English+Response+on+Command+(ERC)/@12.1400625,-86.2158125,851m/data=!3m1!1e3!4m14!1m7!3m6!1s0xa8e74518e2b484cf:0xff9be86fbb640ba7!2sEnglish+Response+on+Command+(ERC)!8m2!3d12.1400625!4d-86.2158125!16s%2Fg%2F11z10ftt30!3m5!1s0xa8e74518e2b484cf:0xff9be86fbb640ba7!8m2!3d12.1400625!4d-86.2158125!16s%2Fg%2F11z10ftt30?hl=en&entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="hover:text-green-500 transition"><i class="fa-solid fa-location-dot"></i></a>
         </div>
         <p class="text-slate-600 text-[9px] uppercase tracking-[0.5em] font-bold text-center mb-12">
             Cognitive Language Acquisition Program Nicaragua &copy; 2026
@@ -480,7 +546,7 @@
         const formHeader = document.getElementById("form-header");
         const successMsg = document.getElementById("success-message");
 
-        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw_os17kdfwBwmZLs8ZETO5667OtD4v2AhUE3L73irYBDEgEFAvUlckt8zBSogDg9_ynA/exec"; 
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyCntRn6um_MklaWFbHqPjmEXcnNLi_my5gGv8gSMRI7OpKlyNcQXfsrDXyo8NYuheIhA/exec"; 
         let currentStep = 0;
 
         function toggleField(triggerId, targetIds, requiredValue) {
@@ -528,24 +594,35 @@
             }
         }
 
-        nextBtn.addEventListener("click", () => {
-            const inputs = steps[currentStep].querySelectorAll("input[required], select[required], textarea[required]");
-            let valid = true;
-            inputs.forEach(input => { 
-                if (!input.value || (input.type === "tel" && input.value.length < 4)) { 
-                    valid = false; 
-                    input.classList.add("border-red-500"); 
-                } else { 
-                    input.classList.remove("border-red-500"); 
-                } 
-            });
-
-            if (valid && currentStep < steps.length - 1) {
-                currentStep++;
-                updateForm();
-                window.scrollTo({ top: form.offsetTop - 100, behavior: 'smooth' });
-            }
+       nextBtn.addEventListener("click", () => {
+        const inputs = steps[currentStep].querySelectorAll("input[required], select[required], textarea[required]");
+        let valid = true;
+        inputs.forEach(input => { 
+            if (!input.value || (input.type === "tel" && input.value.length < 4)) { 
+                valid = false; 
+                input.classList.add("border-red-500"); 
+            } else { 
+                input.classList.remove("border-red-500"); 
+            } 
         });
+
+        if (valid && currentStep < steps.length - 1) {
+            
+            // --- GOOGLE ANALYTICS EVENT ---
+            // We log this BEFORE increasing currentStep so we know which step was just finished.
+            if (typeof gtag === 'function') {
+                gtag('event', 'form_step_complete', {
+                    'step_number': currentStep + 1,
+                    'step_title': steps[currentStep].getAttribute("data-title")
+                });
+            }
+            // ------------------------------
+
+            currentStep++;
+            updateForm();
+            window.scrollTo({ top: form.offsetTop - 100, behavior: 'smooth' });
+        }
+    });
 
         prevBtn.addEventListener("click", () => {
             if (currentStep > 0) {
@@ -565,6 +642,14 @@
                 body: new FormData(form) 
             })
             .then(() => {
+                // --- GOOGLE ANALYTICS CONVERSION ---
+                if (typeof gtag === 'function') {
+                    gtag('event', 'generate_lead', {
+                        'event_category': 'form',
+                        'event_label': 'ERC Academy Registration'
+                    });
+                }
+                // -----------------------------------
                 form.style.display = 'none';
                 formHeader.style.display = 'none';
                 successMsg.style.display = 'flex';
@@ -598,6 +683,56 @@
 
         updateForm();
     </script>
+
+<script>
+    (function() {
+        // 1. Configuration
+        const ERC_PLACE_ID = 'ChIJz4S04hhF56gRpwtku2_om_8';
+        const REVIEWS_CONTAINER = 'google-reviews-container';
+
+        function loadGoogleReviews() {
+            const container = document.getElementById(REVIEWS_CONTAINER);
+            if (!container || typeof google === 'undefined') return;
+
+            const service = new google.maps.places.PlacesService(document.createElement('div'));
+
+            service.getDetails({
+                placeId: ERC_PLACE_ID,
+                fields: ['reviews', 'rating']
+            }, (place, status) => {
+                if (status === google.maps.places.PlacesServiceStatus.OK && place.reviews) {
+                    container.innerHTML = ''; // Clear the "Conectando..." pulse
+
+                    // We take the top 3 reviews
+                    place.reviews.slice(0, 3).forEach(review => {
+                        const stars = '★'.repeat(review.rating) + '☆'.repeat(5 - review.rating);
+                        
+                        // Injecting using your "price-card" and "slate" styles
+                        const reviewHtml = `
+                            <div class="price-card p-8 bg-slate-900/20 rounded-[2.5rem] flex flex-col text-left border border-slate-800 hover:border-blue-500 transition-all duration-500">
+                                <div class="text-blue-500 text-xs mb-4 tracking-[0.2em] font-black">${stars}</div>
+                                <p class="text-slate-300 text-sm leading-relaxed mb-6 italic font-light">
+                                    "${review.text.substring(0, 160)}..."
+                                </p>
+                                <div class="mt-auto pt-4 border-t border-slate-800/50">
+                                    <span class="text-white font-black text-[10px] uppercase tracking-widest">
+                                        ${review.author_name}
+                                    </span>
+                                </div>
+                            </div>
+                        `;
+                        container.innerHTML += reviewHtml;
+                    });
+                } else {
+                    container.innerHTML = '<p class="text-slate-500 text-center col-span-full italic">No pudimos cargar las reseñas en este momento.</p>';
+                }
+            });
+        }
+
+        // Run when window loads to ensure Google Maps script is ready
+        window.addEventListener('load', loadGoogleReviews);
+    })();
+</script>
 </body>
 </script>
 </body>
