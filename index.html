@@ -7,7 +7,7 @@
     <title>ERC Academy - Entrenamiento Cognitivo Nicaragua</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClr0TIgtaBgz1ZZ4IUNJCLpH1UlQ77GWY&libraries=places"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClr0TIgtaBgz1ZZ4IUNJCLpH1UlQ77GWY&libraries=places&language=es"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -66,6 +66,7 @@
                 <a href="#methodology" class="hover:text-blue-400 transition">Progreso</a>
                 <a href="#about" class="hover:text-blue-400 transition">El Fundador</a>
                 <a href="#pricing" class="hover:text-blue-400 transition">Inversión</a>
+                <a href="#testimonials" class="hover:text-blue-400 transition">Reseñas</a>
             </div>
             <div class="flex items-center gap-4">
                 <div class="hidden md:flex gap-4 text-slate-400 border-r border-slate-800 pr-6">
@@ -750,8 +751,10 @@
                     `;
                     container.innerHTML = summaryHtml;
 
-                    // We take the top 3 reviews
+                    // We take the top 6 reviews
                     place.reviews.slice(0, 6).forEach(review => {
+                        // FIX: This ensures we use the original language if it exists
+                        const finalReviewText = review.original_text || review.text;
                         const stars = '★'.repeat(review.rating) + '☆'.repeat(5 - review.rating);
                         
                         // Injecting using your "price-card" and "slate" styles
