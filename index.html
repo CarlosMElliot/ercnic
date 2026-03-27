@@ -757,7 +757,7 @@
                         // Injecting using your "price-card" and "slate" styles
                         const reviewHtml = `
                             <div class="bg-white rounded-3xl p-8 shadow-2xl shadow-blue-500/5 flex flex-col h-full hover:-translate-y-2 transition-all duration-500 border border-slate-100">
-                                <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center justify-between mb-4">
                                     <div class="flex items-center gap-3">
                                         <img src="https://www.gstatic.com/images/branding/product/2x/googleg_32dp.png" 
                                              class="w-5 h-5 object-contain" alt="Google">
@@ -773,12 +773,11 @@
                                     </div>
                                 </div>
 
-                                // Replace the review text div with this tightened version
-                                <div class="text-slate-600 text-[13px] leading-relaxed mb-4 font-medium italic overflow-y-auto max-h-[160px] pr-3 custom-scrollbar">
+                                <div class="text-slate-600 text-[13px] leading-relaxed mb-6 font-medium italic overflow-y-auto max-h-[160px] pr-3 custom-scrollbar">
                                     "${review.text}"
                                 </div>
 
-                                <div class="pt-5 border-t border-slate-50 flex items-center gap-3">
+                                <div class="mt-auto pt-5 border-t border-slate-50 flex items-center gap-3">
                                     <img src="${review.profile_photo_url}" 
                                          alt="${review.author_name}"
                                          class="w-9 h-9 rounded-full object-cover border border-slate-100 shadow-sm"
