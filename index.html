@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -388,11 +389,11 @@
                     </div>
                     <div>
                         <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">4. Correo electrónico</label>
-                        <input type="email" name="email" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white focus:border-blue-500 outline-none transition">
+                        <input type="email" name="email" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white focus:border-blue-500 outline-none transition">
                     </div>
                     <div>
                         <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">5. Dirección</label>
-                        <input type="text" name="direccion" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white focus:border-blue-500 outline-none transition">
+                        <input type="text" name="direccion" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white focus:border-blue-500 outline-none transition">
                     </div>
                 </div>
             </div>
@@ -403,7 +404,7 @@
                         <div>
                             <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">6. ¿Estudia actualmente?*</label>
                             <select name="estudia_actualmente" id="cond-estudia" onchange="toggleField('cond-estudia', ['institucion'], 'Sí')" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none">
-                                <option value="" disabled selected>Seleccione...</option>
+                                <option value=""> Seleccione...</option>
                                 <option value="Sí">Sí</option>
                                 <option value="No">No</option>
                             </select>
@@ -421,6 +422,7 @@
                         <div>
                             <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">10. Nivel CEFR estimado</label>
                             <select name="nivel_cefr" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none">
+                                <option value=""> Seleccione...</option>
                                 <option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option>
                             </select>
                         </div>
@@ -455,7 +457,7 @@
                         <div>
                             <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">14. ¿Actualmente trabaja?*</label>
                             <select name="trabaja" id="cond-trabaja" onchange="toggleField('cond-trabaja', ['horas_trabajo', 'horario_trabajo'], 'Sí')" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none">
-                                <option value="" disabled selected>Seleccione...</option>
+                                <option value=""> Seleccione...</option>
                                 <option value="Sí">Sí</option>
                                 <option value="No">No</option>
                             </select>
@@ -475,6 +477,7 @@
                         <div>
                             <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">17. ¿Tiene con quién practicar?</label>
                             <select name="practica_companero" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none">
+                                <option value=""> Seleccione...</option>
                                 <option>No</option><option>Sí</option>
                             </select>
                         </div>
@@ -487,12 +490,13 @@
                         <div>
                             <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">19. ¿Disponible fines de semana?*</label>
                             <select name="dispo_finde" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none">
+                                <option value=""> Seleccione...</option>
                                 <option>Sí</option><option>No</option>
                             </select>
                         </div>
                         <div>
                             <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">20. Horario de preferencia</label>
-                            <input type="text" name="horario_pref" placeholder="Ej: Mañanas" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white outline-none italic">
+                            <input type="text" name="horario_pref" placeholder="Ej: Mañanas" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white outline-none italic">
                         </div>
                     </div>
                 </div>
@@ -502,12 +506,13 @@
                 <div class="space-y-6">
                     <div>
                         <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">21. Comentarios o preguntas adicionales</label>
-                        <textarea name="comentarios" class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white h-24 outline-none italic"></textarea>
+                        <textarea name="comentarios" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-white h-24 outline-none italic"></textarea>
                     </div>
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">Preferencia WhatsApp*</label>
                             <select name="pref_whatsapp" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none">
+                                <option value=""> Seleccione...</option>
                                 <option>Mensaje escrito</option>
                                 <option>Nota de voz</option>
                                 <option>Llamada</option>
@@ -516,6 +521,7 @@
                         <div>
                             <label class="block text-[10px] font-bold uppercase text-slate-500 mb-2 ml-2">Idioma de contacto*</label>
                             <select name="idioma_contacto" required class="w-full bg-slate-950 border border-slate-800 rounded-2xl px-6 py-4 text-slate-300 outline-none">
+                                <option value=""> Seleccione...</option>
                                 <option>Español</option>
                                 <option>Inglés</option>
                                 <option>Ambos</option>
@@ -675,8 +681,27 @@
             }
         });
 
-        form.addEventListener("submit", e => {
+form.addEventListener("submit", e => {
             e.preventDefault();
+
+            // --- ADDED VALIDATION FOR FINAL STEP ---
+            const inputs = steps[currentStep].querySelectorAll("input[required], select[required], textarea[required]");
+            let valid = true;
+            inputs.forEach(input => { 
+                if (!input.value || (input.type === "tel" && input.value.length < 4)) { 
+                    valid = false; 
+                    input.classList.add("border-red-500"); 
+                } else { 
+                    input.classList.remove("border-red-500"); 
+                } 
+            });
+
+            if (!valid) {
+                alert("Por favor, completa los campos requeridos antes de finalizar.");
+                return; // Stop here if not valid
+            }
+            // ---------------------------------------
+
             submitBtn.disabled = true;
             submitBtn.innerText = "ENVIANDO...";
 
@@ -686,14 +711,12 @@
                 body: new FormData(form) 
             })
             .then(() => {
-                // --- GOOGLE ANALYTICS CONVERSION ---
                 if (typeof gtag === 'function') {
                     gtag('event', 'generate_lead', {
                         'event_category': 'form',
                         'event_label': 'ERC Academy Registration'
                     });
                 }
-                // -----------------------------------
                 form.style.display = 'none';
                 formHeader.style.display = 'none';
                 successMsg.style.display = 'flex';
